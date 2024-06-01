@@ -206,3 +206,5 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 10%-  # decrease screen bri
 #launch picom to make nautilus sane
 exec_always picom -b
 
+#audio applet 
+exec pasystray
