@@ -1,5 +1,5 @@
 #!/bin/sh
-pkgs='tldr git nala vlc diodon gnome-tweaks gnome-shell-extension-manager libreoffice build-essential'
+pkgs='tldr git nala vlc diodon gnome-tweaks gnome-shell-extension-manager libreoffice build-essential valgrind'
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y $pkgs
 sudo snap install obsidian
