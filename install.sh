@@ -1,13 +1,16 @@
 #!/bin/bash
-pkgs='tldr git nala vlc diodon gnome-tweaks gnome-shell-extension-manager libreoffice build-essential valgrind vim'
-snap_pkgs='telegram-desktop obsidian'
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y $pkgs
-sudo snap install $snap_pkgs
+scripts="apt.sh github.sh vscode.sh"
+chmod +x $scripts
+./apt.sh
+./github.sh
+# Installing chrome and github
 echo "Install chrome and vscode from their respective websites."
-echo "Press enter to continue..."
+echo "Press enter when done..."
+
 read
 ./vscode.sh
 
-echo "Install 'color picker' and 'vitals' from extension manager"
-
+echo "Install 'color picker' and 'vitals' via extension manager"
+echo "Press enter when done..."
+read
+echo "Setup complete"
