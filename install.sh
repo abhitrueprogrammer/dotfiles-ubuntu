@@ -1,6 +1,7 @@
 #!/bin/bash
-scripts="apt.sh github.sh vscode.sh"
+scripts="apt.sh github.sh vscode.sh gnome.sh"
 chmod +x $scripts
+./gnome.sh
 ./apt.sh
 ./github.sh
 # Installing chrome and github
