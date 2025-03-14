@@ -1,0 +1,5 @@
+{
+    "vim.smartRelativeLine": true,
+    "files.autoSave": "afterDelay"
+
+}

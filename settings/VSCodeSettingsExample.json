@@ -1,0 +1,15 @@
+{
+    "vim.smartRelativeLine": true,
+    "files.autoSave": "afterDelay",
+    "dart.flutterSdkPath": "/home/abhitruechamp/dev/flutter",
+    "cmake.configureOnOpen": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
