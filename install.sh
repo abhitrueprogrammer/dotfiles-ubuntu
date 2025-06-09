@@ -1,5 +1,5 @@
 #!/bin/bash
-scripts="apt.sh github.sh vscode.sh gnome.sh"
+scripts="apt.sh github.sh vscode.sh gnome.sh fish.sh setup_fish.sh"
 chmod +x $scripts
 ./gnome.sh
 ./apt.sh
@@ -14,4 +14,11 @@ read
 echo "Install 'color picker' and 'vitals' via extension manager"
 echo "Press enter when done..."
 read
+echo "Do you want to install and setup fish? (Y/n)"
+if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
+    ./fish.sh
+else
+  echo "Skipping installation of fish."
+fi
+
 echo "Setup complete"

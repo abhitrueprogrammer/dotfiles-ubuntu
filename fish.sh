@@ -1,9 +1,4 @@
-#!/usr/bin/env fish
+echo "installing fish and fortune"
+sudo apt install fish fortune -y
 
-
-function fish_greeting
-    echo "hello abhitruechamp"
-    fortune -a -s
-end
-
-fish_greeting
+./setup_fish.sh
