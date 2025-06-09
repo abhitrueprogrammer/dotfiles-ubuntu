@@ -5,3 +5,4 @@
 -[ ] Put vim dot file 
 -[ ] Update vscode extensions
 -[ ] Put a --default option to have a hands free experience
+-[ ] Install docker
