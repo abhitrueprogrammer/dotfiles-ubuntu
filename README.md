@@ -5,12 +5,12 @@
 
 -[ ] Put zen install in addition to chrome
 
--[ ] Put vim dot file
+-[ x ] Put vim dot file
 
-- [ ] Snap install nvim and install latest lazyvim
+-[ x ] Snap install nvim and install latest lazyvim
 
--[x] Update vscode extensions
+-[ x ] Update vscode extensions
 
--[ ] Put a --default option to have a hands free experience
+-[  ] Put a --default option to have a hands free experience
 
--[ ] Install docker
+-[ x ] Install docker

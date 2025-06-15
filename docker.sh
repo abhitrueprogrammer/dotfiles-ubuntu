@@ -1,1 +1,1 @@
-curl -fsSL https://get.docker.com | bas
+curl -fsSL https://get.docker.com | bash
