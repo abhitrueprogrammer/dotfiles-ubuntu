@@ -1,5 +1,5 @@
 #!/bin/bash
-scripts="apt.sh github.sh vscode.sh gnome.sh fish.sh setup_fish.sh"
+scripts="apt.sh github.sh vscode.sh gnome.sh fish.sh setup_fish.sh docker.sh"
 chmod +x $scripts
 ./gnome.sh
 ./apt.sh
@@ -16,9 +16,15 @@ echo "Press enter when done..."
 read
 echo "Do you want to install and setup fish? (Y/n)"
 if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
-    ./fish.sh
+  ./fish.sh
 else
   echo "Skipping installation of fish."
 fi
 
+echo "Do you want to install and setup docker? (Y/n)"
+if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
+  ./docker.sh
+else
+  echo "Skipping installation of docker."
+fi
 echo "Setup complete"

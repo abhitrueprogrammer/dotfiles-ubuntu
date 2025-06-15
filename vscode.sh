@@ -2,13 +2,16 @@
 
 # Correct array assignment (no spaces around `=`)
 extensions=(
+  # language extensions
+  ms-python.python
   ms-vscode.cpptools-extension-pack
+
   IgorSbitnev.error-gutters
   eamodio.gitlens
   esbenp.prettier-vscode
-  ms-python.python
   streetsidesoftware.code-spell-checker
   agutierrezr.emmet-keybindings
+  GitHub.copilot
 )
 
 web_extensions=(
