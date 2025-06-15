@@ -1,5 +1,5 @@
 #!/bin/bash
-scripts="apt.sh github.sh vscode.sh gnome.sh fish.sh setup_fish.sh docker.sh"
+scripts="apt.sh github.sh vscode.sh gnome.sh fish.sh setup_fish.sh docker.sh zen_beta.sh"
 chmod +x $scripts
 ./gnome.sh
 ./apt.sh
@@ -27,4 +27,4 @@ if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
 else
   echo "Skipping installation of docker."
 fi
-echo "Setup complete"
+echo "Setup complete. Run zen using ./zen_beta.sh"
