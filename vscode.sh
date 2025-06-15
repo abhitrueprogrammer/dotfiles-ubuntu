@@ -5,15 +5,18 @@ extensions=(
   ms-vscode.cpptools-extension-pack
   IgorSbitnev.error-gutters
   eamodio.gitlens
-  esbenp.prettier-vscode 
+  esbenp.prettier-vscode
   ms-python.python
+  streetsidesoftware.code-spell-checker
   agutierrezr.emmet-keybindings
 )
 
 web_extensions=(
-  agutierrezr.emmet-keybindings 
+  agutierrezr.emmet-keybindings
   dsznajder.es7-react-js-snippets
   bradlc.vscode-tailwindcss
+  SimonSiefke.svg-preview
+  dbaeumer.vscode-eslint
 )
 
 # Install extensions for general usage
@@ -35,17 +38,17 @@ fi
 
 read -p "Do you want to update vscode settings? (y/N)" input
 # Hard yes only words
-if [ "$input" == "y" ] || [ "$input" == "Y" ]; then 
+if [ "$input" == "y" ] || [ "$input" == "Y" ]; then
   # Define the target directory for VS Code user settings on macOS
   VSCODE_USER_SETTINGS_DIR="${HOME}/.config/Code/User"
 
   # Check if VS Code settings directory exists
   if [ -d "$VSCODE_USER_SETTINGS_DIR" ]; then
-      # Copy your custom settings.json and keybindings.json to the VS Code settings directory
-      cp -i "./settings/VSCodeSettings.json" "${VSCODE_USER_SETTINGS_DIR}/settings.json"
-      # ln -sf "${HOME}/dotfiles/settings/VSCode-Keybindings.json" "${VSCODE_USER_SETTINGS_DIR}/keybindings.json"
+    # Copy your custom settings.json and keybindings.json to the VS Code settings directory
+    cp -i "./settings/VSCodeSettings.json" "${VSCODE_USER_SETTINGS_DIR}/settings.json"
+    # ln -sf "${HOME}/dotfiles/settings/VSCode-Keybindings.json" "${VSCODE_USER_SETTINGS_DIR}/keybindings.json"
   else
-      echo "VS Code user settings directory does not exist. Please ensure VS Code is installed."
+    echo "VS Code user settings directory does not exist. Please ensure VS Code is installed."
   fi
 else
   echo "skipping copying settings.json."
