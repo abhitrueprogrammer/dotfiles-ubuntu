@@ -15,4 +15,12 @@
 
 -[ x ] Install docker
 
--[ x ] Put installation of application configs(vim, docker, fish, vscode, zen) in separate folder
+-[  ] Put installation of application configs(vim, docker, fish, vscode, zen) in separate folder
+
+-[ ] Detect if snaps are installed else try out installing flatpak
+
+-[ ] wakapi 
+
+-[ ] Create file structure with git, code, temp, ubuntu-dotfiles and documents/obsidian, documents/form.
+
+-[ ] Get obsidian from web after github sign installing 

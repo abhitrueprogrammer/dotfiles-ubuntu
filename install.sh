@@ -21,10 +21,17 @@ else
   echo "Skipping installation of fish."
 fi
 
-echo "Do you want to install and setup docker? (Y/n)"
+echo "Do you want to install and setup docker(wakapi depends on it)? (Y/n)"
 if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
   ./docker.sh
 else
   echo "Skipping installation of docker."
+fi
+
+echo "Do you want to install wakapi?"
+if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
+  ./wakapi.sh
+else
+  echo "Skipping installation of wakapi."
 fi
 echo "Setup complete. Run zen using ./zen_beta.sh"
