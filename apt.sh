@@ -11,8 +11,10 @@ if [ ! -e "$HOME/.vimrc" ]; then
 else
   echo "vimrc already exists, skipping move"
 fi
+./docker.sh
 
-echo "Do you want to install and setup neovim? (Y/n)"
+echo "Do you want to install and setup lazyvim? (Y/n)"
+read
 if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
   snap install nvim
   sudo apt install kitty

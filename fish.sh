@@ -1,4 +1,5 @@
+chmod +x './app_config/setup_fish.sh'
 echo "installing fish and fortune"
 sudo apt install fish fortune -y
 
-./setup_fish.sh
+./apps/setup_fish.sh
