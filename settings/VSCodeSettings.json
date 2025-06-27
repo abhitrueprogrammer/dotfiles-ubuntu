@@ -1,5 +1,6 @@
 {
-    "vim.smartRelativeLine": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.sideBar.location": "right",
 
 }

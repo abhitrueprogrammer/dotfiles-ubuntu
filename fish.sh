@@ -1,5 +1,12 @@
-chmod +x './app_config/setup_fish.sh'
-echo "installing fish and fortune"
-sudo apt install fish fortune -y
+#!/usr/bin/env bash
 
-./apps/setup_fish.sh
+CONFIG_DIR="app_config"
+
+echo "Installing fish shell and fortune..."
+sudo apt install -y fish fortune-mod
+
+# Ensure the setup script is executable
+chmod +x "$CONFIG_DIR/setup_fish.sh"
+
+# Run the fish setup
+"$CONFIG_DIR/setup_fish.sh"

@@ -1,11 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Correct array assignment (no spaces around `=`)
-extensions=(
-  # language extensions
+install_web=${1:-true}
+install_config=${2:-false}
+
+# Always install these
+base_extensions=(
   ms-python.python
   ms-vscode.cpptools-extension-pack
-
   IgorSbitnev.error-gutters
   eamodio.gitlens
   esbenp.prettier-vscode
@@ -22,37 +24,28 @@ web_extensions=(
   dbaeumer.vscode-eslint
 )
 
-# Install extensions for general usage
-for extension in "${extensions[@]}"; do
-  code --install-extension "$extension"
+echo "🔧 Installing base VS Code extensions..."
+for ext in "${base_extensions[@]}"; do
+  code --install-extension "$ext"
 done
 
-# Ask the user if they want to install webdev extensions
-read -p "Do you want to install vscode extensions for webdev? (Y/n): " input
-
-# If the user types 'y', 'Y', or presses Enter, install webdev extensions
-if [ "$input" == "y" ] || [ "$input" == "Y" ] || [ -z "$input" ]; then
-  for web_extension in "${web_extensions[@]}"; do
-    code --install-extension "$web_extension"
+if $install_web; then
+  echo "🌐 Installing webdev VS Code extensions..."
+  for ext in "${web_extensions[@]}"; do
+    code --install-extension "$ext"
   done
-else
-  echo "Not installing web-extensions."
 fi
 
-read -p "Do you want to update vscode settings? (y/N)" input
-# Hard yes only words
-if [ "$input" == "y" ] || [ "$input" == "Y" ]; then
-  # Define the target directory for VS Code user settings on macOS
+if $install_config; then
+  echo "⚙️ Updating VS Code settings and keybindings..."
   VSCODE_USER_SETTINGS_DIR="${HOME}/.config/Code/User"
 
-  # Check if VS Code settings directory exists
-  if [ -d "$VSCODE_USER_SETTINGS_DIR" ]; then
-    # Copy your custom settings.json and keybindings.json to the VS Code settings directory
-    cp -i "./settings/VSCodeSettings.json" "${VSCODE_USER_SETTINGS_DIR}/settings.json"
-    # ln -sf "${HOME}/dotfiles/settings/VSCode-Keybindings.json" "${VSCODE_USER_SETTINGS_DIR}/keybindings.json"
+  if [[ -d "$VSCODE_USER_SETTINGS_DIR" ]]; then
+    cp -n "./settings/VSCodeSettings.json" "${VSCODE_USER_SETTINGS_DIR}/settings.json"
+    cp -n "./settings/VSCode-Keybindings.json" "${VSCODE_USER_SETTINGS_DIR}/keybindings.json"
   else
-    echo "VS Code user settings directory does not exist. Please ensure VS Code is installed."
+    echo "❌ VS Code settings directory not found. Is VS Code installed?"
   fi
 else
-  echo "skipping copying settings.json."
+  echo "⏭ Skipping VS Code settings/keybindings update."
 fi
