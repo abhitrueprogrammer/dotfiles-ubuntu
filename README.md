@@ -1,3 +1,7 @@
+A pc setup automation utility that installs apps, setups common apps and asks user intervention wherever required, to make setting up a linux machine as convinient as possible. 
+
+
+
 # TODO:
 -[ x ] Put fish install
 

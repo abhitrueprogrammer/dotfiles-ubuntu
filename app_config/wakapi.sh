@@ -19,4 +19,4 @@ EOF
 fi
 
 # 3) Start via docker compose ────────────────────────────────────────────
-docker compose --project-directory "$target_dir" up -d
+sudo docker compose --project-directory "$target_dir" up -d
