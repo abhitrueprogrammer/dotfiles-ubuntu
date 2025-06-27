@@ -1,4 +1,4 @@
-git clone https://github.com/muety/wakapi.git
+git clone git@github.com:muety/wakapi.git "$HOME/git"
 
 #!/bin/bash
 
