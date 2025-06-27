@@ -24,7 +24,8 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 -[ ] Detect if snaps are installed else try out installing flatpak
 
 
--[ ] Create file structure with git, code, temp, ubuntu-dotfiles and documents/obsidian, documents/form.
+-[ ] Create file structure with git, code, temp, ubuntu-dotfiles and documents/obsidian, documents/form
+
   -[ ] wakapi 
 
 -[ ] Get obsidian from web after github signin 
