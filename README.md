@@ -15,7 +15,7 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 
 -[ x ] Update vscode extensions
 
--[  ] Put a --default option to have a hands free experience
+-[ x ] (kinda did this with nextJS like install) Put a --default option to have a hands free experience
 
 -[ x ] Install docker
 
@@ -23,9 +23,8 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 
 -[ ] Detect if snaps are installed else try out installing flatpak
 
+-[ x ] Create file structure with git, code, temp, ubuntu-dotfiles and documents/obsidian, documents/form
 
--[ ] Create file structure with git, code, temp, ubuntu-dotfiles and documents/obsidian, documents/form
+-[ x ] wakapi 
 
-  -[ ] wakapi 
-
--[ ] Get obsidian from web after github signin 
+-[ x ] Get obsidian from web after github signin 
