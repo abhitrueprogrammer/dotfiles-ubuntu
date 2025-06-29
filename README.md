@@ -40,3 +40,6 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 [ x ] wakapi 
 
 [ x ] Get obsidian from web after github signin 
+
+# LONGTERM: 
+[ ] Make this UNIX compatible (both for linux and macos)
