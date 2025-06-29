@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-mkdir -p "$HOME/code" "$HOME/git" "$HOME/Documents/obsidian/"
+mkdir -p "$HOME/code" "$HOME/git" "$HOME/Documents/obsidian/" "$HOME/test"
 
 clone_if_missing() {
   local repo=$1 dest=$2

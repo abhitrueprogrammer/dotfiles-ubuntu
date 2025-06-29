@@ -2,6 +2,19 @@
 set -euo pipefail
 
 CONFIG_DIR="app_config"
+chmod +x detect-os.sh
+
+distro_name=$(./detect-os.sh)
+
+echo "Detected distro: $distro_name"
+
+# now you can branch on $distro_name
+if [[ $distro_name == "mint" ]]; then
+  echo "enabling install of snaps"
+  sudo mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/rename_to_nosnap.pref
+  sudo apt install snapd
+fi
+
 # ─── Grab whatever Git already knows (if Git exists) ───────────────
 if command -v git &>/dev/null; then
   git_user_name=$(git config --global --get user.name || true)
