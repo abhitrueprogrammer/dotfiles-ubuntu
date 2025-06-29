@@ -2,18 +2,18 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 
 # Installation instruction: 
 1. Download the archieve and cd into its folder:
-Using CURL
+ Using CURL
+  ```sh
+     mkdir -p dotfiles-ubuntu \
+   && curl -L https://github.com/abhitrueprogrammer/dotfiles-ubuntu/archive/refs/heads/main.tar.gz \
+      | tar -xz --strip-components=1 -C dotfiles-ubuntu \
+   && cd dotfiles-ubuntu
+ ```
+ Or if you have git:
  ```sh
-    mkdir -p dotfiles-ubuntu \
-  && curl -L https://github.com/abhitrueprogrammer/dotfiles-ubuntu/archive/refs/heads/main.tar.gz \
-     | tar -xz --strip-components=1 -C dotfiles-ubuntu \
-  && cd dotfiles-ubuntu
-```
-Or if you have git:
-```sh
-git clone https://github.com/abhitrueprogrammer/dotfiles-ubuntu.git
-cd dotfiles-ubuntu
-```
+ git clone https://github.com/abhitrueprogrammer/dotfiles-ubuntu.git
+ cd dotfiles-ubuntu
+ ```
 2. Make the install script runnable and run it:
 ```sh
 chmod +x ./install.sh
