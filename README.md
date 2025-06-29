@@ -1,5 +1,17 @@
 A pc setup automation utility that installs apps, setups common apps and asks user intervention wherever required, to make setting up a linux machine as convinient as possible. 
 
+## Flow
+1. Asks user to questions and complete initial setup. 
+2. Installs packages through apt and snap
+3. Sets up git
+4. Sets up folder structure
+5. Sets up gnome settings
+6. Sets up VSCode extensions and optionally settings and keyboard shortcuts
+7. Installs neovim
+8. Installs docker
+9. Installs fish
+10. Asks user to install gnome extension
+11. Asks user install chrome and run script to install zen beta
 
 
 # TODO:
