@@ -2,23 +2,24 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 
 # Installation instruction: 
 1. Download the archieve and cd into its folder:
- Using CURL
-  ```sh
-     mkdir -p dotfiles-ubuntu \
-   && curl -L https://github.com/abhitrueprogrammer/dotfiles-ubuntu/archive/refs/heads/main.tar.gz \
-      | tar -xz --strip-components=1 -C dotfiles-ubuntu \
-   && cd dotfiles-ubuntu
- ```
- Or if you have git:
- ```sh
- git clone https://github.com/abhitrueprogrammer/dotfiles-ubuntu.git
- cd dotfiles-ubuntu
- ```
+   - Using CURL
+     ```sh
+        mkdir -p dotfiles-ubuntu \
+      && curl -L https://github.com/abhitrueprogrammer/dotfiles-ubuntu/archive/refs/heads/main.tar.gz \
+         | tar -xz --strip-components=1 -C dotfiles-ubuntu \
+      && cd dotfiles-ubuntu
+     ```
+   - Or if you have git:
+     ```sh
+     git clone https://github.com/abhitrueprogrammer/dotfiles-ubuntu.git
+     cd dotfiles-ubuntu
+     ```
 2. Make the install script runnable and run it:
 ```sh
 chmod +x ./install.sh
 ./install.sh
 ```
+
 ## Flow
 1. Asks user to questions and complete initial setup. 
 2. Installs packages through apt and snap
@@ -32,6 +33,9 @@ chmod +x ./install.sh
 10. Asks user to install gnome extension
 11. Asks user install chrome and run script to install zen beta
 
+# Contribution guidelines:
+1. Feel free to fork this project and make it your own.
+2. Contributing through pull requests is enouraged. Note that I won't be accepting PRs that just install a new package in the main branch as this is highly personalised for my needs. Create an issue for the potential PR first if you are unsure.
 
 # TODO:
 [ x ] Put fish install
