@@ -15,10 +15,10 @@ A pc setup automation utility that installs apps, setups common apps and asks us
      cd dotfiles-ubuntu
      ```
 2. Make the install script runnable and run it:
-```sh
-chmod +x ./install.sh
-./install.sh
-```
+   ```sh
+   chmod +x ./install.sh
+   ./install.sh
+   ```
 
 ## Flow
 1. Asks user to questions and complete initial setup. 
