@@ -65,5 +65,7 @@ It also makes sure the all scripts are runable indiviually, doubling up this as 
 
 [ x ] Get obsidian from web after github signin 
 
+[  ] Make zen detect user name and setup the desktop file
+
 # LONGTERM: 
 [ ] Make this UNIX compatible (both for linux and macos)
