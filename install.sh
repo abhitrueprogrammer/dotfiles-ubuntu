@@ -12,7 +12,6 @@ echo "Detected distro: $distro_name"
 if [[ $distro_name == "mint" ]]; then
   echo "enabling install of snaps"
   sudo mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/rename_to_nosnap.pref
-  sudo apt install snapd
 fi
 
 # ─── Grab whatever Git already knows (if Git exists) ───────────────
