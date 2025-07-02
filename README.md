@@ -35,7 +35,7 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 
 # Contribution guidelines:
 1. Feel free to fork this project and make it your own.
-2. Contributing through pull requests is enouraged. Note that I won't be accepting PRs that just install a new package in the main branch as this is highly personalised for my needs. Create an issue for the potential PR first if you are unsure.
+2. Contributing through pull requests is enouraged. Note that I won't be accepting PRs that just installs a new package, at least in the main branch, as this is highly personalised for my specific needs. Create an issue for the potential PR first if you are unsure.
 
 # TODO:
 [ x ] Put fish install
