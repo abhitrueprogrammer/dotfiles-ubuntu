@@ -1,4 +1,5 @@
 A pc setup automation utility that installs apps, setups common apps and asks user intervention wherever required, to make setting up a linux machine as convinient as possible. 
+It also makes sure the all scripts are runable indiviually, doubling up this as a useful repository of setup scripts.
 
 # Installation instruction: 
 1. Download the archieve and cd into its folder:
