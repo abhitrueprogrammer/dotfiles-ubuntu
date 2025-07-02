@@ -7,6 +7,3 @@ if ! command -v docker &>/dev/null; then
 else
   echo "Docker is already installed. Skipping installation."
 fi
-
-echo "Installing docker-compose-plugin..."
-sudo apt install -y docker-compose-plugin
