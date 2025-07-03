@@ -10,9 +10,7 @@ install_fnm_for() {
 
 # ── 1. Install fnm for any shells that exist ──────────────────────────────────
 command -v fish >/dev/null 2>&1 && install_fnm_for "$(command -v fish)"
-command -v bash >/dev/null 2>&1 && install_fnm_for "$(command -v bash)"
-
-source $HOME/.bashrc
+command -v bash >/dev/null 2>&1 && install_fnm_for "$(command -v bash)" && source $HOME/.bashrc
 fnm install --lts
 # ── 2. Enable pnpm via Corepack (runs once; survives shell restart) ───────────
 corepack enable pnpm
