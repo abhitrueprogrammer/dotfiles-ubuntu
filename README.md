@@ -1,4 +1,5 @@
 A pc setup automation utility that installs apps, setups common apps and asks user intervention wherever required, to make setting up a linux machine as convinient as possible. 
+It also makes sure the all scripts are runable indiviually, doubling up this as a useful repository of setup scripts.
 
 # Installation instruction: 
 1. Download the archieve and cd into its folder:
@@ -63,6 +64,8 @@ A pc setup automation utility that installs apps, setups common apps and asks us
 [ x ] wakapi 
 
 [ x ] Get obsidian from web after github signin 
+
+[  ] Make zen detect user name and setup the desktop file
 
 # LONGTERM: 
 [ ] Make this UNIX compatible (both for linux and macos)
