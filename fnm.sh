@@ -5,7 +5,7 @@ install_fnm_for() {
   local target_shell="$1"
   echo "→ Installing fnm for $(basename "$target_shell")"
   # Pass SHELL to the *installer* (right side of the pipe)
-  # curl -fsSL https://fnm.vercel.app/install | SHELL="$target_shell" bash
+  curl -fsSL https://fnm.vercel.app/install | SHELL="$target_shell" bash
 }
 
 # ── 1. Install fnm for any shells that exist ──────────────────────────────────

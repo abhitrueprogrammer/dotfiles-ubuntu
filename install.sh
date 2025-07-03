@@ -76,7 +76,7 @@ scripts=(
   "$CONFIG_DIR/nvim.sh"
   "docker.sh"
   "$CONFIG_DIR/wakapi.sh"
-
+  "fnm.sh"
   "zen_beta.sh"
 )
 chmod +x "${scripts[@]}"
@@ -94,7 +94,7 @@ $install_nvim && ./"$CONFIG_DIR/nvim.sh"
 if command -v docker &>/dev/null; then
   ./"$CONFIG_DIR"/wakapi.sh
 fi
-
+./fnm.sh
 $install_fish && ./fish.sh
 echo "Install the GNOME extensions 'Color Picker' and 'Vitals' via Extension Manager."
 read -rp "Press Enter when they're installed… " _
