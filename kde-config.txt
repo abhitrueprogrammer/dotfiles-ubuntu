@@ -1,0 +1,5 @@
+1. Set display scaling to 1.25. Restart
+2. Install sddm-theme-breeze, set sddm theme
+3. Set natural scrolling
+4. Set Dark theme
+5. Set desktop effect as magic lamp
