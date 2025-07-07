@@ -96,7 +96,7 @@ if command -v docker &>/dev/null; then
 fi
 ./fnm.sh
 $install_fish && ./fish.sh
-echo "Install the GNOME extensions 'Color Picker' and 'Vitals' via Extension Manager."
+echo "Install the GNOME extensions 'Color Picker', space bar and 'Vitals' via Extension Manager."
 read -rp "Press Enter when they're installed… " _
 
 echo
