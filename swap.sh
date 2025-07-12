@@ -1,3 +1,5 @@
+set -euo pipefail
+
 sudo swapoff /swap.img
 mv /swap.img $HOME/swap.backup
 echo "please delete swap.backup from ~/swap.backup once everything starts working fine "
