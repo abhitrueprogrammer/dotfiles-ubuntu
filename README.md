@@ -40,7 +40,11 @@ It also makes sure the all scripts are runable indiviually, doubling up this as 
 
 # TODO:
 [ x ] Put fish install
+[ ] Install earlyoom and inform user to run swap.sh
 
+[ ] Install tmux
+
+[ ] Install default ffx
 [ ] Install fnm and default node with it
 
 [ x ] Put zen install in addition to chrome
